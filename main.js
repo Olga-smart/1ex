@@ -1,15 +1,44 @@
+"use strict";
+
+// #region Header
+class Header {
+  constructor(component) {
+    this._initFields(component);
+    this._attachEventHandlers();
+  }
+
+  _initFields(component) {
+    this._component = component;
+    this._burger = component.querySelector('.js-header__burger');
+    this._menu = component.querySelector('.js-header__menu');
+  }
+
+  _handleBurgerClick() {
+    this._burger.classList.toggle('header__burger_menu_open');
+    this._menu.classList.toggle('header__menu_open');
+  }
+
+  _attachEventHandlers() {
+    this._burger.addEventListener('click', this._handleBurgerClick.bind(this));
+  }
+}
+
+const header = document.querySelector('.js-header');
+if (header) {
+  new Header(header);
+}
+// #endregion Header
+
 // #region Circulation Supply
 const supplyElement = document.querySelector('.js-distribution__supply-value');
 
-// fetch("https://api.mexc.com/api/v3/avgPrice?symbol=1EXUSDT")
-// .then((response) => response.json())
-// .then((json) => console.log(json));
+fetch("https://token.dev.licenses.1ex.com/circulating")
+.then((response) => response.json())
+.then((json) => console.log(json));
 
-// let response = await fetch('https://token.dev.licenses.1ex.com/circulating');
-// if (response.ok) {
-//   let json = await response.json();
-//   console.log(json);
-// }
+fetch("https://api.mexc.com/api/v3/avgPrice?symbol=1EXUSDT")
+.then((response) => response.json())
+.then((json) => console.log(json));
 
 // fetch('https://token.dev.licenses.1ex.com/circulating', {
 //   headers: {
