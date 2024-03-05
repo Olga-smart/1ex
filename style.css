@@ -437,11 +437,26 @@ body {
 .distribution {
   padding-top: 0;
 }
+.distribution__supply {
+
+}
+.distribution__supply-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.distribution__supply-value {
+  font-family: 'JetBrains Mono', 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1;
+}
 .distribution__pie-chart {
-  width: 690px;
+  /* width: 690px; */
   height: 550px;
   width: 62%;
-  /* height: 49%; */
 }
 .distribution__bar-chart {
   width: 100%;

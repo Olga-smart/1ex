@@ -1,3 +1,42 @@
+// #region Circulation Supply
+const supplyElement = document.querySelector('.js-distribution__supply-value');
+
+// fetch("https://api.mexc.com/api/v3/avgPrice?symbol=1EXUSDT")
+// .then((response) => response.json())
+// .then((json) => console.log(json));
+
+// let response = await fetch('https://token.dev.licenses.1ex.com/circulating');
+// if (response.ok) {
+//   let json = await response.json();
+//   console.log(json);
+// }
+
+// fetch('https://token.dev.licenses.1ex.com/circulating', {
+//   headers: {
+//     "Accept": "application/json",
+//     "X-Requested-With": "XMLHttpRequest",
+//     'Access-Control-Allow-Origin': '*',
+//     "Access-Control-Allow-Methods" : "GET",
+//     "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+//     'Content-Type': 'application/json',
+//   }
+// })
+//   .then(response => response.json())
+//   .then(response => console.log(response));
+
+// fetch('https://api.mexc.com/api/v3/avgPrice?symbol=1EXUSDT', {
+//   method: 'GET',
+//   credentials: "include",
+//   headers: {
+//     "Accept": "application/json",
+//     "X-Requested-With": "XMLHttpRequest",
+//     'Access-Control-Allow-Origin': 'http://127.0.0.1:5500/',
+//     "Access-Control-Allow-Methods" : "GET",
+//     "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+//     'Content-Type': 'application/json',
+//   }}).then(response => response.json()).then(result => console.log(result));
+// #endregion Circulation Supply
+
 // #region Charts
 
 // #region Pie
@@ -72,50 +111,106 @@ const barChart = echarts.init(document.querySelector('.js-distribution__bar-char
 
 const barOption = {
   tooltip: {},
-  legend: {},
+  legend: {
+    show: false,
+  },
+  grid: {
+    left: 23,
+    right: 0,
+    top: 10,
+    bottom: 55,
+  },
   xAxis: {
     type: 'category',
     // data: ['DECEMBER 2023', '2024', '2025', '2026']
-    data: [
-      'Month 1', 
-      'Month 2', 
-      'Month 3',
-      'Month 4',
-      'Month 5',
-      'Month 6',
-      'Month 7',
-      'Month 8',
-      'Month 9',
-      'Month 10',
-      'Month 11',
-      'Month 12',
-      'Month 13',
-      'Month 14',
-      'Month 15',
-      'Month 16',
-      'Month 17',
-      'Month 18',
-      'Month 19',
-      'Month 20',
-      'Month 21',
-      'Month 22',
-      'Month 23',
-      'Month 24',
-      'Month 25',
-      'Month 26',
-      'Month 27',
-      'Month 28',
-      'Month 29',
-      'Month 30',
-      'Month 31',
-      'Month 32',
-      'Month 33',
-      'Month 34',
-      'Month 35',
-      'Month 36',
-    ]
+    // data: [
+    //   'Month 1', 
+    //   'Month 2', 
+    //   'Month 3',
+    //   'Month 4',
+    //   'Month 5',
+    //   'Month 6',
+    //   'Month 7',
+    //   'Month 8',
+    //   'Month 9',
+    //   'Month 10',
+    //   'Month 11',
+    //   'Month 12',
+    //   'Month 13',
+    //   'Month 14',
+    //   'Month 15',
+    //   'Month 16',
+    //   'Month 17',
+    //   'Month 18',
+    //   'Month 19',
+    //   'Month 20',
+    //   'Month 21',
+    //   'Month 22',
+    //   'Month 23',
+    //   'Month 24',
+    //   'Month 25',
+    //   'Month 26',
+    //   'Month 27',
+    //   'Month 28',
+    //   'Month 29',
+    //   'Month 30',
+    //   'Month 31',
+    //   'Month 32',
+    //   'Month 33',
+    //   'Month 34',
+    //   'Month 35',
+    //   'Month 36',
+    // ],
+    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+    axisLabel: {
+      formatter: (value, index) => {
+        if (value == 1) return 'DECEMBER\n2023';
+        if (value == 7) return '2024';
+        if (value == 19) return '2025';
+        if (value == 31) return '2026';
+        return '';
+      },
+      color: '#fff',
+      fontWeight: 500,
+      fontFamily: 'Cera Pro',
+      padding: [13, 0, 0, 0],
+      alignMinLabel: 'left',
+      // align: 'left',
+    },
+    axisTick: {
+      interval: (value, index) => {
+        if (index == 2 || index == 14 || index == 26) return true;
+      },
+      length: 11,
+      lineStyle: {
+        color: '#fff',
+        opacity: 0.4,
+        width: 2,
+      },
+    },
+    axisLine: {
+      show: false,
+      onZero: false,
+    },
+    offset: 9,
   },
-  yAxis: {},
+  yAxis: {
+    splitNumber: 4,
+    min: 0,
+    max: 1000000000,
+    interval: 250000000,
+    axisLabel: {
+      inside: true,
+      color: '#fff',
+      margin: 0,
+      showMinLabel: false,
+      fontWeight: 500,
+      fontFamily: 'Cera Pro',
+    },
+    splitLine: {
+      show: false,
+    }
+  },
   color: [
     '#567BFF',
     '#35DBE5',
