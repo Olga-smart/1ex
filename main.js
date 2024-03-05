@@ -29,43 +29,6 @@ if (header) {
 }
 // #endregion Header
 
-// #region Circulation Supply
-const supplyElement = document.querySelector('.js-distribution__supply-value');
-
-fetch("https://token.dev.licenses.1ex.com/circulating")
-.then((response) => response.json())
-.then((json) => console.log(json));
-
-fetch("https://api.mexc.com/api/v3/avgPrice?symbol=1EXUSDT")
-.then((response) => response.json())
-.then((json) => console.log(json));
-
-// fetch('https://token.dev.licenses.1ex.com/circulating', {
-//   headers: {
-//     "Accept": "application/json",
-//     "X-Requested-With": "XMLHttpRequest",
-//     'Access-Control-Allow-Origin': '*',
-//     "Access-Control-Allow-Methods" : "GET",
-//     "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-//     'Content-Type': 'application/json',
-//   }
-// })
-//   .then(response => response.json())
-//   .then(response => console.log(response));
-
-// fetch('https://api.mexc.com/api/v3/avgPrice?symbol=1EXUSDT', {
-//   method: 'GET',
-//   credentials: "include",
-//   headers: {
-//     "Accept": "application/json",
-//     "X-Requested-With": "XMLHttpRequest",
-//     'Access-Control-Allow-Origin': 'http://127.0.0.1:5500/',
-//     "Access-Control-Allow-Methods" : "GET",
-//     "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-//     'Content-Type': 'application/json',
-//   }}).then(response => response.json()).then(result => console.log(result));
-// #endregion Circulation Supply
-
 // #region Charts
 
 // #region Pie
@@ -694,3 +657,34 @@ window.addEventListener('resize', function() {
 // #endregion Bar
 
 // #endregion Charts
+
+// #region Sliders
+
+// #region Features Slider
+new Glide('.js-features__slider', {
+  type: 'carousel',
+  perView: 1,
+  gap: 0,
+}).mount();
+// #endregion Features Slider
+
+// #region Products Slider
+new Glide('.js-products__slider', {
+  perView: 2.2,
+  gap: 24,
+  peek: 32,
+  breakpoints: {
+    700: {
+      perView: 1.7,
+    },
+    600: {
+      perView: 1.4,
+    },
+    500: {
+      perView: 1.1,
+    }
+  }
+}).mount();
+// #endregion Products Slider
+
+// #endregion Sliders
