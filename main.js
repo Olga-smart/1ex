@@ -662,9 +662,19 @@ window.addEventListener('resize', function() {
 
 // #region Features Slider
 new Glide('.js-features__slider', {
-  type: 'carousel',
-  perView: 1,
+  perView: 2.7,
   gap: 0,
+  breakpoints: {
+    1100: {
+      perView: 2.5,
+    },
+    1000: {
+      perView: 1.5,
+    },
+    700: {
+      perView: 1,
+    }
+  }
 }).mount();
 // #endregion Features Slider
 
