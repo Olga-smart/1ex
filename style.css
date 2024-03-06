@@ -60,6 +60,7 @@
 /* #region General */
 :root {
   --pink-color:#FF57D4;
+  --pink-dark-color: #C92AA0;
   --dark-color: #141422;
   --turquoise-color: #35DBE5;
   --blue-color: #567BFF;
@@ -84,14 +85,52 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('./img/main-screen-left-gradient.svg'), url('./img/main-screen-right-gradient.svg'), url('./img/main-screen-image.png');
-  background-size: 46%, 72%, 78%;
-  background-position: top left, top right, top right;
+  background-size: 46%, 72%, 100%;
+  background-position: top left, top right, top 2% right -350px;
   background-repeat: no-repeat; 
 }
-@media (max-width: 665px) {
+@media (max-width: 1500px) {
   body {
-    background-position: top left, top right, top 215px right; 
-    background-size: 46%, 72%, 90%;
+    background-size: 46%, 72%, 120%;
+    background-position: top left, top right, top -0.5% right -600px;
+  }
+}
+@media (max-width: 1400px) {
+  body {
+    background-position: top left, top right, top -0.5% right -500px;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    background-position: top left, top right, top -0.5% right -400px;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    background-position: top left, top right, top 0.5% right -300px;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    background-position: top left, top right, top 1% right -270px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background-position: top left, top right, top 2% right -240px; 
+    background-size: 46%, 72%, 130%;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    background-position: top left, top right, top 2% right -220px; 
+    background-size: 46%, 72%, 135%;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background-position: top left, top right, top 3% right -190px; 
+    background-size: 46%, 72%, 145%;
   }
 }
 .container {
@@ -174,7 +213,13 @@ body {
   border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;  
+  display: inline-block; 
+  -webkit-transition: all .3s ease-in-out; 
+  -o-transition: all .3s ease-in-out; 
+  transition: all .3s ease-in-out; 
+}
+.button:hover {
+  background-color: var(--pink-dark-color); 
 }
 .button__inner {
   display: -webkit-box;
@@ -210,7 +255,6 @@ body {
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  position: relative;
 }
 .header__container {
   min-width: 300px;
@@ -283,6 +327,12 @@ body {
   display: block;
   padding: 2px 10px;
   font-size: 16px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.header__nav-item:hover {
+  color: var(--pink-dark-color);
 }
 .header__burger {
   width: 28px;
@@ -378,14 +428,18 @@ body {
     top: -100%;
     left: 0;
     right: 0;
+    height: 100%;
     opacity: 0;
     pointer-events: none;
     background-color: var(--dark-color);
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 55px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;        
   }
   .header__menu_open {
     top: 0;
@@ -400,11 +454,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 20px;        
+  }
+  .header__nav-item {
+    font-size: 24px;
   }
 }
 @media (max-width: 359px) {
@@ -498,7 +555,7 @@ body {
   margin-bottom: 296px;       
 }
 .features__item-img {
-  width: 272%;
+  width: 706px;
   height: auto;
   position: absolute;
   top: -85px;
@@ -532,9 +589,15 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .features__item-link_algo {
   color: var(--turquoise-color);
+}
+.features__item-link:hover {
+  color: var(--pink-dark-color);
 }
 .features__item-link_ai-ews {
   color: var(--blue-color);
