@@ -897,6 +897,9 @@ body {
   font-size: 16px;
   text-decoration: none;
 }
+.products__header-link:hover {
+  color: var(--pink-dark-color);
+}
 .products__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -936,6 +939,9 @@ body {
   font-size: 16px;
   line-height: 1;
   margin-top: auto;
+}
+.products__item-link:hover {
+  color: var(--pink-dark-color);
 }
 .products__slider {
   display: none;
@@ -1031,6 +1037,10 @@ body {
   grid-column: 1/2;
   grid-row: 3/4;
 }
+.roadmap__item-4 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
 .roadmap__item-heading {
   font-family: 'JetBrains Mono', 'Arial', sans-serif;
   font-size: 30px;
@@ -1045,11 +1055,6 @@ body {
 @media (max-width: 900px) {
   .roadmap {
     padding-bottom: 160px;
-  }
-  .roadmap__list {
-    -webkit-column-gap: 56px;
-       -moz-column-gap: 56px;
-            column-gap: 56px;      
   }
 }
 @media (max-width: 800px) {
@@ -1073,12 +1078,11 @@ body {
     left: 12px;
   }
   .roadmap__item {
-    font-size: 20px;
-  }
-  .roadmap__item {
     grid-column: unset;
     grid-row: unset;
     padding-left: 30px;
+    line-height: 1.4;
+    font-size: 20px;
   }
   .roadmap__item-heading {
     text-align: right;
