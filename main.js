@@ -42,32 +42,29 @@ const pieOption = {
         { value: 4, name: 'PRE-SEED ROUND' },
         { value: 6, name: 'SEED ROUND' },
         { value: 4, name: 'PRIVATE ROUND' },
-        { value: 15, name: 'FUTURE ROUND' },
+        { value: 15, name: 'FUTURE\nROUND' },
         { value: 12, name: 'CORE TEA' },
         { value: 6, name: 'ADVISORS' },
         { value: 10, name: 'LIQUIDITY' },
         { value: 8, name: 'MARKETING' },
-        { value: 20, name: 'ECOSYSTEM REWARDS' },
-        { value: 15, name: 'STRATEGIC PARTNERSHIPS' },
+        { value: 20, name: 'ECOSYSTEM\nREWARDS' },
+        { value: 15, name: 'STRATEGIC\nPARTNERSHIPS' },
       ],
       color: [
-        '#567BFF',
+        '#86A0FF',
         '#35DBE5',
         '#DBFF76',
         '#DE39B4',
-        '#6714BA',
-        '#2F59EE',
+        '#7E1EDE',
+        '#406AFF',
         '#02BAA4',
         '#8EEA55',
         '#FF57D4',
-        '#8313F3'
+        '#B66DFF',
       ],
-      radius: ['33%', '67%'],
+      radius: ['38%', '68%'],
       label: {
         distance: 30,
-        textBorderWidth: 0,
-        textBorderColor: 'transparent',
-        fontFamily: 'Cera Pro',
         lineHeight: 21,
         formatter: '{b|{b}}\n{per|{d}%}',
         rich: {
@@ -75,17 +72,23 @@ const pieOption = {
             fontWeight: 500,
             fontSize: 17,
             color: '#fff',
+            fontFamily: 'Cera Pro',
           },
           per: {
             fontWeight: 700,
             fontSize: 17,
             color: 'inherit',
+            fontFamily: 'Cera Pro',
           }
         }
       },
       labelLine: {
         show: false,
         length: 38,
+      },
+      itemStyle: {
+        borderColor: '#141422',
+        borderWidth: 4,
       },
     }
   ]
@@ -107,61 +110,62 @@ const barOption = {
     show: false,
   },
   grid: {
-    left: 23,
+    left: 0,
     right: 0,
     top: 10,
-    bottom: 55,
+    // bottom: 55,
+    bottom: 100,
   },
   xAxis: {
     type: 'category',
     // data: ['DECEMBER 2023', '2024', '2025', '2026']
-    // data: [
-    //   'Month 1', 
-    //   'Month 2', 
-    //   'Month 3',
-    //   'Month 4',
-    //   'Month 5',
-    //   'Month 6',
-    //   'Month 7',
-    //   'Month 8',
-    //   'Month 9',
-    //   'Month 10',
-    //   'Month 11',
-    //   'Month 12',
-    //   'Month 13',
-    //   'Month 14',
-    //   'Month 15',
-    //   'Month 16',
-    //   'Month 17',
-    //   'Month 18',
-    //   'Month 19',
-    //   'Month 20',
-    //   'Month 21',
-    //   'Month 22',
-    //   'Month 23',
-    //   'Month 24',
-    //   'Month 25',
-    //   'Month 26',
-    //   'Month 27',
-    //   'Month 28',
-    //   'Month 29',
-    //   'Month 30',
-    //   'Month 31',
-    //   'Month 32',
-    //   'Month 33',
-    //   'Month 34',
-    //   'Month 35',
-    //   'Month 36',
-    // ],
-    data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+    data: [
+      'Month 1', 
+      'Month 2', 
+      'Month 3',
+      'Month 4',
+      'Month 5',
+      'Month 6',
+      'Month 7',
+      'Month 8',
+      'Month 9',
+      'Month 10',
+      'Month 11',
+      'Month 12',
+      'Month 13',
+      'Month 14',
+      'Month 15',
+      'Month 16',
+      'Month 17',
+      'Month 18',
+      'Month 19',
+      'Month 20',
+      'Month 21',
+      'Month 22',
+      'Month 23',
+      'Month 24',
+      'Month 25',
+      'Month 26',
+      'Month 27',
+      'Month 28',
+      'Month 29',
+      'Month 30',
+      'Month 31',
+      'Month 32',
+      'Month 33',
+      'Month 34',
+      'Month 35',
+      'Month 36',
+    ],
+    // data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
     axisLabel: {
-      formatter: (value, index) => {
-        if (value == 1) return 'DECEMBER\n2023';
-        if (value == 7) return '2024';
-        if (value == 19) return '2025';
-        if (value == 31) return '2026';
-        return '';
-      },
+      // formatter: (value, index) => {
+      //   // if (value == 1) return 'DECEMBER\n2023';
+      //   if (value == 7) return '2024';
+      //   if (value == 19) return '2025';
+      //   if (value == 31) return '2026';
+      //   return '';
+      // },
       color: '#fff',
       fontWeight: 500,
       fontFamily: 'Cera Pro',
@@ -170,10 +174,10 @@ const barOption = {
       // align: 'left',
     },
     axisTick: {
-      interval: (value, index) => {
-        if (index == 2 || index == 14 || index == 26) return true;
-      },
-      length: 11,
+      // interval: (value, index) => {
+      //   if (index == 2 || index == 14 || index == 26) return true;
+      // },
+      // length: 11,
       lineStyle: {
         color: '#fff',
         opacity: 0.4,
@@ -188,9 +192,9 @@ const barOption = {
   },
   yAxis: {
     splitNumber: 4,
-    min: 0,
-    max: 1000000000,
-    interval: 250000000,
+    // min: 0,
+    // max: 1000000000,
+    // interval: 250000000,
     axisLabel: {
       inside: true,
       color: '#fff',
@@ -204,22 +208,22 @@ const barOption = {
     }
   },
   color: [
-    '#567BFF',
+    '#86A0FF',
     '#35DBE5',
     '#DBFF76',
     '#DE39B4',
-    '#6714BA',
-    '#2F59EE',
+    '#7E1EDE',
+    '#406AFF',
     '#02BAA4',
     '#8EEA55',
     '#FF57D4',
-    '#8313F3'
+    '#B66DFF',
   ],
   series: [
     {
       name: 'PRE-SEED ROUND',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         0,
         0,
@@ -262,7 +266,7 @@ const barOption = {
     {
       name: 'SEED ROUND',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         0,
         0,
@@ -305,7 +309,7 @@ const barOption = {
     {
       name: 'PRIVATE ROUND',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         1350000,
         1350000,
@@ -348,7 +352,7 @@ const barOption = {
     {
       name: 'FUTURE ROUND',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         0,
         0,
@@ -391,7 +395,7 @@ const barOption = {
     {
       name: 'CORE TEAM',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         0,
         0,
@@ -434,7 +438,7 @@ const barOption = {
     {
       name: 'ADVISORS',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         0,
         0,
@@ -477,7 +481,7 @@ const barOption = {
     {
       name: 'LIQUIDITY',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         26000000,
         39000000,
@@ -520,7 +524,7 @@ const barOption = {
     {
       name: 'MARKETING',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         2700000,
         9281250,
@@ -563,7 +567,7 @@ const barOption = {
     {
       name: 'ECOSYSTEM REWARDS',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         0,
         6250000,
@@ -606,7 +610,7 @@ const barOption = {
     {
       name: 'STRATEGIC PARTNERSHIPS',
       type: 'bar',
-      stack: 'a',
+      // stack: 'a',
       data: [
         4500000,
         13593750,
@@ -646,6 +650,15 @@ const barOption = {
         150000000,
       ],
     },
+  ],
+  dataZoom: [
+    {
+      type: 'inside',
+    },
+    {
+      type: 'slider',
+      height: 10
+    }
   ],
 };
 

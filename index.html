@@ -154,16 +154,39 @@
     </div>
   </section>
 
-  <section class="section distribution" hidden>
+  <section class="section distribution">
     <div class="container">
-      <h2 class="section__heading">Token Distribution</h2>
-      <p class="distribution__description">In tokenomics, gradual vesting and limited circulation are crucial for the company’s capitalization growth, especially during product launches where the token acts as a key, emphasizing its importance in the overall growth strategy.</p>
-      <div class="distribution__supply">
-        <p class="distribution__supply-title">Circulation supply</p>
-        <span class="distribution__supply-value js-distribution__supply-value accented-text">7,54$ M</span>
-      </div>
+      <h2 class="section__heading distribution__heading">Token Distribution</h2>
+      <div class="distribution__intro">
+        <div class="distribution__intro-left">
+          <p class="distribution__description">In tokenomics, gradual vesting and limited circulation are crucial for the company’s capitalization growth, especially during product launches where the token acts as a key, emphasizing its importance in the overall growth strategy.</p>
+          <div class="distribution__logos">
+            <img src="./img/coingecko.svg" alt="CoinGecko" width="191" height="58">
+            <img src="./img/coinmarketcap.svg" alt="CoinMarketCap" width="239" height="41">
+          </div>
+          <div class="distribution__button-wrapper">
+            <a href="https://www.mexc.com/ru-RU/exchange/1EX_USDT" class="button">
+              <span class="button__inner">
+                Buy on
+                <span class="visually-hidden">MEXC Global</span>
+                <img src="./img/mexc-logo.svg" alt="MEXC Global" width="180" height="35" class="button__img">
+              </span>       
+            </a>
+          </div>          
+        </div>
+        <div class="distribution__intro-right">
+          <dl class="distribution__indicators">
+            <dt>Circulation supply</dt>
+            <dd>7,54$ M</dd>
+            <dt>Market cap</dt>
+            <dd>75$ M</dd>
+          </dl>
+        </div>
+      </div>          
       <div class="distribution__pie-chart js-distribution__pie-chart"></div>
-      <div class="distribution__bar-chart js-distribution__bar-chart"></div>
+      <div class="distribution__bar-chart-wrapper">
+        <div class="distribution__bar-chart js-distribution__bar-chart"></div>
+      </div>
     </div>
   </section>
   
@@ -256,15 +279,17 @@
 
   <section class="section exchanges">
     <div class="container exchanges__container">
-      <h2 class="section__heading exchanges__heading"><span class="accented-text">1ex Multibroker:</span> convenience with a diverse selection of exchanges through our brokerage programs.</h2>
-      <div class="exchanges__button-wrapper">
-        <a href="https://www.mexc.com/ru-RU/exchange/1EX_USDT" class="button">
-          <span class="button__inner">
-            Buy on
-            <span class="visually-hidden">MEXC Global</span>
-            <img src="./img/mexc-logo.svg" alt="MEXC Global" width="180" height="35" class="button__img">
-          </span>       
-        </a>
+      <div class="exchanges__container__left">
+        <h2 class="section__heading exchanges__heading"><span class="accented-text">1ex Multibroker:</span> convenience with a diverse selection of exchanges through our brokerage programs.</h2>
+        <div class="exchanges__button-wrapper">
+          <a href="https://www.mexc.com/ru-RU/exchange/1EX_USDT" class="button">
+            <span class="button__inner">
+              Buy on
+              <span class="visually-hidden">MEXC Global</span>
+              <img src="./img/mexc-logo.svg" alt="MEXC Global" width="180" height="35" class="button__img">
+            </span>       
+          </a>
+        </div>
       </div>
       <div class="exchanges__list">
         <img src="./img/okx.svg" alt="OKX" class="exchanges__item" width="122" height="39">
