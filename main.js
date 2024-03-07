@@ -64,7 +64,6 @@ const pieOption = {
       ],
       radius: ['32%', '68%'],
       label: {
-        // show: false,
         distance: 30,
         lineHeight: 21,
         formatter: '{b|{b}}\n{per|{d}%}',
@@ -141,12 +140,10 @@ const barOption = {
     left: 0,
     right: 0,
     top: 10,
-    // bottom: 55,
     bottom: 120,
   },
   xAxis: {
     type: 'category',
-    // data: ['DECEMBER 2023', '2024', '2025', '2026']
     data: [
       'Month 1', 
       'Month 2', 
@@ -185,21 +182,12 @@ const barOption = {
       'Month 35',
       'Month 36',
     ],
-    // data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
     axisLabel: {
-      // formatter: (value, index) => {
-      //   // if (value == 1) return 'DECEMBER\n2023';
-      //   if (value == 'Month 7') return '2024';
-      //   if (value == 'Month 19') return '2025';
-      //   if (value == 'Month 31') return '2026';
-      //   return '';
-      // },
       color: '#fff',
       fontWeight: 500,
       fontFamily: 'Cera Pro',
       padding: [13, 0, 0, 0],
       alignMinLabel: 'left',
-      // align: 'left',
     },
     axisTick: {
       interval: (value, index) => {
@@ -220,9 +208,6 @@ const barOption = {
   },
   yAxis: {
     splitNumber: 4,
-    // min: 0,
-    // max: 1000000000,
-    // interval: 250000000,
     axisLabel: {
       inside: true,
       color: '#fff',
@@ -251,7 +236,6 @@ const barOption = {
     {
       name: 'PRE-SEED ROUND',
       type: 'bar',
-      // stack: 'a',
       data: [
         0,
         0,
@@ -294,7 +278,6 @@ const barOption = {
     {
       name: 'SEED ROUND',
       type: 'bar',
-      // stack: 'a',
       data: [
         0,
         0,
@@ -337,7 +320,6 @@ const barOption = {
     {
       name: 'PRIVATE ROUND',
       type: 'bar',
-      // stack: 'a',
       data: [
         1350000,
         1350000,
@@ -380,7 +362,6 @@ const barOption = {
     {
       name: 'FUTURE ROUND',
       type: 'bar',
-      // stack: 'a',
       data: [
         0,
         0,
@@ -423,7 +404,6 @@ const barOption = {
     {
       name: 'CORE TEAM',
       type: 'bar',
-      // stack: 'a',
       data: [
         0,
         0,
@@ -466,7 +446,6 @@ const barOption = {
     {
       name: 'ADVISORS',
       type: 'bar',
-      // stack: 'a',
       data: [
         0,
         0,
@@ -509,7 +488,6 @@ const barOption = {
     {
       name: 'LIQUIDITY',
       type: 'bar',
-      // stack: 'a',
       data: [
         26000000,
         39000000,
@@ -552,7 +530,6 @@ const barOption = {
     {
       name: 'MARKETING',
       type: 'bar',
-      // stack: 'a',
       data: [
         2700000,
         9281250,
@@ -595,7 +572,6 @@ const barOption = {
     {
       name: 'ECOSYSTEM REWARDS',
       type: 'bar',
-      // stack: 'a',
       data: [
         0,
         6250000,
@@ -638,7 +614,6 @@ const barOption = {
     {
       name: 'STRATEGIC PARTNERSHIPS',
       type: 'bar',
-      // stack: 'a',
       data: [
         4500000,
         13593750,
