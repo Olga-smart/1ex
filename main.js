@@ -102,7 +102,7 @@ window.addEventListener('resize', function() {
 // #endregion Pie
 
 // #region Bar
-const barChart = echarts.init(document.querySelector('.js-distribution__bar-chart'), null, { renderer: 'svg' });
+let barChart = echarts.init(document.querySelector('.js-distribution__bar-chart'), null, { renderer: 'svg' });
 
 const barOption = {
   tooltip: {},
@@ -654,12 +654,52 @@ const barOption = {
   dataZoom: [
     {
       type: 'inside',
+      start: 0,
+      end: 30,
     },
     {
       type: 'slider',
       height: 0,
     }
   ],
+  media: [
+    {
+      query: {
+        minWidth: 600,
+      },
+      option: {
+        dataZoom: [
+          {
+            type: 'inside',
+            start: 0,
+            end: 50,
+          },
+          {
+            type: 'slider',
+            height: 0,
+          }
+        ],
+      },
+    },
+    {
+      query: {
+        minWidth: 1000,
+      },
+      option: {
+        dataZoom: [
+          {
+            type: 'inside',
+            start: 0,
+            end: 100,
+          },
+          {
+            type: 'slider',
+            height: 0,
+          }
+        ],
+      },
+    },
+  ]
 };
 
 barChart.setOption(barOption);
