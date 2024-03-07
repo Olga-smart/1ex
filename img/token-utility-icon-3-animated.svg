@@ -1,21 +1,21 @@
 <?xml version="1.0" standalone="no"?>
-<svg id="Frame290109" width="139" height="138" viewBox="0 0 139 138" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M114.289 7L137.578 48.0254L136.607 49.2773H136.605L69.3264 136L69.2891 135.951L69.2517 136L1.97299 49.2773H1.97126L1 48.0254L24.2891 7.00001L114.289 7ZM113.058 9.16807L70.4104 9.16807L68.1671 9.16807L25.5198 9.16808L24.2891 11.1982L3.90756 47.1014L4.58623 49.2773L67.2214 130.014L69.2891 132.589L71.3567 130.014L133.992 49.2773L134.671 47.1014L114.289 11.1982L113.058 9.16807Z" fill="white" stroke-dasharray="0,0,638.0426757812501,159.51066894531246"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,638.0426757812501,159.51066894531246; 
-          0,159.51066894531246,638.0426757812501,0; 
-          638.0426757812501,159.51066894531246,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
-<path d="M24 8.62598L46.4 48.1932L69.0014 132.748" stroke="white" stroke-width="2" stroke-dasharray="0,0,106.39295654296876,26.598239135742183"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,106.39295654296876,26.598239135742183; 
+<svg id="Frame290109" width="138" height="138" viewBox="0 0 138 138" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M113.961 7L137.25 48.0254L136.279 49.2773H136.277L68.9983 136L68.9609 135.951L68.9236 136L1.64487 49.2773H1.64313L0.671875 48.0254L23.9609 7.00001L113.961 7ZM112.73 9.16807L70.0823 9.16807L67.839 9.16807L25.1917 9.16808L23.9609 11.1982L3.57943 47.1014L4.25811 49.2773L66.8933 130.014L68.9609 132.589L71.0286 130.014L133.664 49.2773L134.342 47.1014L113.961 11.1982L112.73 9.16807Z" fill="white" stroke-dasharray="0,0,638.0424316406251,159.5106079101562"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,638.0424316406251,159.5106079101562; 
+          0,159.5106079101562,638.0424316406251,0; 
+          638.0424316406251,159.5106079101562,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+<path d="M23.6719 8.62598L46.0719 48.1932L68.6733 132.748" stroke="white" stroke-width="2" stroke-dasharray="0,0,106.39295654296876,26.598239135742183"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,106.39295654296876,26.598239135742183; 
           0,26.598239135742183,106.39295654296876,0; 
           106.39295654296876,26.598239135742183,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
-<path d="M114.5 8.62598L92.1 48.1932L69.4986 132.748" stroke="white" stroke-width="2" stroke-dasharray="0,0,106.39295654296876,26.598239135742183"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,106.39295654296876,26.598239135742183; 
-          0,26.598239135742183,106.39295654296876,0; 
-          106.39295654296876,26.598239135742183,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
-<path d="M3 48H136" stroke="white" stroke-width="2" stroke-dasharray="0,0,106.4,26.599999999999994"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,106.4,26.599999999999994; 
-          0,26.599999999999994,106.4,0; 
-          106.4,26.599999999999994,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
-<path d="M47.3047 48.1932L69.5047 8.62598" stroke="white" stroke-width="2" stroke-dasharray="0,0,36.295718383789065,9.073929595947263"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,36.295718383789065,9.073929595947263; 
-          0,9.073929595947263,36.295718383789065,0; 
-          36.295718383789065,9.073929595947263,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
-<path d="M91.2031 48.1932L69.0031 8.62598" stroke="white" stroke-width="2" stroke-dasharray="0,0,36.295718383789065,9.073929595947263"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,36.295718383789065,9.073929595947263; 
-          0,9.073929595947263,36.295718383789065,0; 
-          36.295718383789065,9.073929595947263,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+<path d="M114.172 8.62598L91.7719 48.1932L69.1705 132.748" stroke="white" stroke-width="2" stroke-dasharray="0,0,106.3929931640625,26.59824829101562"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,106.3929931640625,26.59824829101562; 
+          0,26.59824829101562,106.3929931640625,0; 
+          106.3929931640625,26.59824829101562,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+<path d="M2.67188 48H135.672" stroke="white" stroke-width="2" stroke-dasharray="0,0,106.40009765625001,26.600024414062496"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,106.40009765625001,26.600024414062496; 
+          0,26.600024414062496,106.40009765625001,0; 
+          106.40009765625001,26.600024414062496,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+<path d="M46.9766 48.1932L69.1766 8.62598" stroke="white" stroke-width="2" stroke-dasharray="0,0,36.29571533203125,9.07392883300781"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,36.29571533203125,9.07392883300781; 
+          0,9.07392883300781,36.29571533203125,0; 
+          36.29571533203125,9.07392883300781,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+<path d="M90.875 48.1932L68.675 8.62598" stroke="white" stroke-width="2" stroke-dasharray="0,0,36.29571533203125,9.07392883300781"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,36.29571533203125,9.07392883300781; 
+          0,9.07392883300781,36.29571533203125,0; 
+          36.29571533203125,9.07392883300781,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
 </svg>
