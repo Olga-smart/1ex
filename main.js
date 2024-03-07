@@ -62,21 +62,22 @@ const pieOption = {
         '#FF57D4',
         '#B66DFF',
       ],
-      radius: ['38%', '68%'],
+      radius: ['32%', '68%'],
       label: {
+        show: false,
         distance: 30,
         lineHeight: 21,
         formatter: '{b|{b}}\n{per|{d}%}',
         rich: {
           b: {
             fontWeight: 500,
-            fontSize: 17,
+            fontSize: 9,
             color: '#fff',
             fontFamily: 'Cera Pro',
           },
           per: {
             fontWeight: 700,
-            fontSize: 17,
+            fontSize: 9,
             color: 'inherit',
             fontFamily: 'Cera Pro',
           }
@@ -90,7 +91,32 @@ const pieOption = {
         borderColor: '#141422',
         borderWidth: 4,
       },
-    }
+    },
+  ],
+  media: [
+    {
+      query: {
+        minWidth: 700,
+      },
+      option: {
+        series: [
+          {
+            label: {
+              show: true,
+              rich: {
+                b: {
+                  fontSize: 17,
+                },
+                per: {
+                  fontSize: 17,
+                }
+              }
+            },
+            radius: ['38%', '68%'],
+          },
+        ]        
+      },
+    },
   ]
 };
 
