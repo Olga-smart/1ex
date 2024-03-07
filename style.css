@@ -527,7 +527,7 @@ body {
 
 /* #region Features */
 .features {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .features__heading {
   max-width: 1032px;
@@ -542,7 +542,7 @@ body {
           justify-content: space-between;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-          align-items: stretch;        
+          align-items: stretch;
 }
 .features__item {
   width: 260px;
@@ -751,6 +751,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .features__item {
+    padding: 0 50px;
+  }
 }
 /* #endregion Features */
 
@@ -935,7 +938,7 @@ body {
 }
 .distribution__bar-chart-wrapper {
   width: 100%;
-  /* overflow-x: auto; */
+  overflow-x: hidden;
 }
 .distribution__bar-chart {
   width: 1120px;

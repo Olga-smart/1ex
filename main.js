@@ -686,6 +686,10 @@ new Glide('.js-features__slider', {
     },
     700: {
       perView: 1,
+    },
+    500: {
+      perView: 1,
+      gap: 30,
     }
   }
 }).mount();
