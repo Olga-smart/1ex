@@ -64,7 +64,7 @@ const pieOption = {
       ],
       radius: ['32%', '68%'],
       label: {
-        show: false,
+        // show: false,
         distance: 30,
         lineHeight: 21,
         formatter: '{b|{b}}\n{per|{d}%}',
@@ -72,13 +72,13 @@ const pieOption = {
           b: {
             fontWeight: 500,
             fontSize: 9,
-            color: '#fff',
+            color: 'transparent',
             fontFamily: 'Cera Pro',
           },
           per: {
             fontWeight: 700,
             fontSize: 9,
-            color: 'inherit',
+            color: 'transparent',
             fontFamily: 'Cera Pro',
           }
         }
@@ -106,9 +106,11 @@ const pieOption = {
               rich: {
                 b: {
                   fontSize: 17,
+                  color: '#fff',
                 },
                 per: {
                   fontSize: 17,
+                  color: 'inherit',
                 }
               }
             },
