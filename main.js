@@ -114,7 +114,7 @@ const barOption = {
     right: 0,
     top: 10,
     // bottom: 55,
-    bottom: 100,
+    bottom: 120,
   },
   xAxis: {
     type: 'category',
@@ -161,9 +161,9 @@ const barOption = {
     axisLabel: {
       // formatter: (value, index) => {
       //   // if (value == 1) return 'DECEMBER\n2023';
-      //   if (value == 7) return '2024';
-      //   if (value == 19) return '2025';
-      //   if (value == 31) return '2026';
+      //   if (value == 'Month 7') return '2024';
+      //   if (value == 'Month 19') return '2025';
+      //   if (value == 'Month 31') return '2026';
       //   return '';
       // },
       color: '#fff',
@@ -174,10 +174,10 @@ const barOption = {
       // align: 'left',
     },
     axisTick: {
-      // interval: (value, index) => {
-      //   if (index == 2 || index == 14 || index == 26) return true;
-      // },
-      // length: 11,
+      interval: (value, index) => {
+        if (index == 2 || index == 14 || index == 26) return true;
+      },
+      length: 11,
       lineStyle: {
         color: '#fff',
         opacity: 0.4,
@@ -657,7 +657,7 @@ const barOption = {
     },
     {
       type: 'slider',
-      height: 10
+      height: 0,
     }
   ],
 };
