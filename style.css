@@ -788,20 +788,38 @@ body {
 .utility__item-1 {
   background-image: url('./img/token-utility-icon-1.svg');
 }
+.utility__item-1:hover {
+  background-image: url('./img/token-utility-icon-1-animated.svg');
+}
 .utility__item-2 {
   background-image: url('./img/token-utility-icon-2.svg');
+}
+.utility__item-2:hover {
+  background-image: url('./img/token-utility-icon-2-animated.svg');
 }
 .utility__item-3 {
   background-image: url('./img/token-utility-icon-3.svg');
 }
+.utility__item-3:hover {
+  background-image: url('./img/token-utility-icon-3-animated.svg');
+}
 .utility__item-4 {
   background-image: url('./img/token-utility-icon-4.svg');
+}
+.utility__item-4:hover {
+  background-image: url('./img/token-utility-icon-4-animated.svg');
 }
 .utility__item-5 {
   background-image: url('./img/token-utility-icon-5.svg');
 }
+.utility__item-5:hover {
+  background-image: url('./img/token-utility-icon-5-animated.svg');
+}
 .utility__item-6 {
   background-image: url('./img/token-utility-icon-6.svg');
+}
+.utility__item-6:hover {
+  background-image: url('./img/token-utility-icon-6-aminated.svg');
 }
 @media (max-width: 1100px) {
   .utility {

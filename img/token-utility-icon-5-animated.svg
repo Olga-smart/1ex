@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Frame290111" width="139" height="138" viewBox="0 0 139 138" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<circle cx="36.168" cy="33.5" r="19.5" stroke="white" stroke-width="2" stroke-dasharray="0,0,97.38606567382813,24.346516418457025"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,97.38606567382813,24.346516418457025; 
+          0,24.346516418457025,97.38606567382813,0; 
+          97.38606567382813,24.346516418457025,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></circle>
+<circle cx="103.168" cy="104.5" r="19.5" stroke="white" stroke-width="2" stroke-dasharray="0,0,97.38605957031251,24.34651489257812"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,97.38605957031251,24.34651489257812; 
+          0,24.34651489257812,97.38605957031251,0; 
+          97.38605957031251,24.34651489257812,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></circle>
+<path d="M31.1437 135.892L85.596 64.8624L60.9942 64.9029L108.45 3.00003" stroke="white" stroke-width="2" stroke-dasharray="0,0,153.681591796875,38.42039794921874"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,153.681591796875,38.42039794921874; 
+          0,38.42039794921874,153.681591796875,0; 
+          153.681591796875,38.42039794921874,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+</svg>

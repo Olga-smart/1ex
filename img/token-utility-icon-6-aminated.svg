@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Group454" width="139" height="138" viewBox="0 0 139 138" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<circle cx="69.332" cy="69" r="68" stroke="white" stroke-width="2" stroke-dasharray="0,0,341.25314941406253,85.3132873535156"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,341.25314941406253,85.3132873535156; 
+          0,85.3132873535156,341.25314941406253,0; 
+          341.25314941406253,85.3132873535156,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></circle>
+<circle cx="47.832" cy="68.5166" r="10" transform="rotate(-90 47.832 68.5166)" stroke="white" stroke-width="2" stroke-dasharray="0,0,49.94157409667969,12.485393524169918"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,49.94157409667969,12.485393524169918; 
+          0,12.485393524169918,49.94157409667969,0; 
+          49.94157409667969,12.485393524169918,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></circle>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M127.332 63.5166H86.5145C84.0602 44.3389 67.6771 29.5166 47.832 29.5166C26.2929 29.5166 8.83203 46.9775 8.83203 68.5166C8.83203 90.0557 26.2929 107.517 47.832 107.517C67.6771 107.517 84.0602 92.6943 86.5145 73.5166H127.332V63.5166ZM84.5307 63.7705L84.7542 65.5166H125.332V71.5166H84.7542L84.5307 73.2627C82.2025 91.4549 66.6578 105.517 47.832 105.517C27.3975 105.517 10.832 88.9511 10.832 68.5166C10.832 48.0821 27.3975 31.5166 47.832 31.5166C66.6578 31.5166 82.2025 45.5783 84.5307 63.7705Z" fill="white" stroke-dasharray="0,0,512.285888671875,128.07147216796872"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,512.285888671875,128.07147216796872; 
+          0,128.07147216796872,512.285888671875,0; 
+          512.285888671875,128.07147216796872,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M111.332 84.5166V76.5166H127.332V84.5166H111.332ZM113.332 82.5166V78.5166H125.332V82.5166H113.332Z" fill="white" stroke-dasharray="0,0,64,15.999999999999996"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="2.5s" values="0,0,64,15.999999999999996; 
+          0,15.999999999999996,64,0; 
+          64,15.999999999999996,0,0" keyTimes="0; 0.19999999999999996; 1"></animate></path>
+</svg>
