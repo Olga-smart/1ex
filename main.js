@@ -138,7 +138,7 @@ const barOption = {
   },
   grid: {
     left: 0,
-    right: 0,
+    right: 10,
     top: 10,
     bottom: 120,
   },
@@ -663,6 +663,9 @@ const barOption = {
     {
       type: 'slider',
       height: 0,
+      textStyle: {
+        color: 'transparent',
+      },
     }
   ],
   media: [
@@ -677,10 +680,6 @@ const barOption = {
             start: 0,
             end: 50,
           },
-          {
-            type: 'slider',
-            height: 0,
-          }
         ],
       },
     },
@@ -695,10 +694,6 @@ const barOption = {
             start: 0,
             end: 100,
           },
-          {
-            type: 'slider',
-            height: 0,
-          }
         ],
       },
     },
