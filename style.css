@@ -84,54 +84,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url('./img/main-screen-left-gradient.svg'), url('./img/main-screen-right-gradient.svg'), url('./img/main-screen-image.png');
-  background-size: 46%, 72%, 100%;
-  background-position: top left, top right, top 2% right -350px;
+  background-image: url('./img/main-screen-left-gradient.svg'), url('./img/main-screen-right-gradient.svg');
+  background-size: 46%, 72%;
+  background-position: top left, top right;
   background-repeat: no-repeat; 
-}
-@media (max-width: 1500px) {
-  body {
-    background-size: 46%, 72%, 120%;
-    background-position: top left, top right, top -0.5% right -600px;
-  }
-}
-@media (max-width: 1400px) {
-  body {
-    background-position: top left, top right, top -0.5% right -500px;
-  }
-}
-@media (max-width: 1000px) {
-  body {
-    background-position: top left, top right, top -0.5% right -400px;
-  }
-}
-@media (max-width: 800px) {
-  body {
-    background-position: top left, top right, top 0.5% right -300px;
-  }
-}
-@media (max-width: 700px) {
-  body {
-    background-position: top left, top right, top 1% right -270px;
-  }
-}
-@media (max-width: 600px) {
-  body {
-    background-position: top left, top right, top 2% right -240px; 
-    background-size: 46%, 72%, 130%;
-  }
-}
-@media (max-width: 500px) {
-  body {
-    background-position: top left, top right, top 2% right -220px; 
-    background-size: 46%, 72%, 135%;
-  }
-}
-@media (max-width: 400px) {
-  body {
-    background-position: top left, top right, top 3% right -190px; 
-    background-size: 46%, 72%, 145%;
-  }
+  overflow-x: hidden;
 }
 .container {
   min-width: 300px;
@@ -487,40 +444,77 @@ body {
 .main-screen {
   padding-bottom: 220px;
 }
+.main-screen__container {
+  padding-top: 140px;
+}
 .main-screen__heading {
   font-family: 'JetBrains Mono', 'Arial', sans-serif;
   text-transform: uppercase;
   font-size: 64px;
   line-height: 1.1;
   width: 72%;
-  margin-top: 140px;
+  margin-top: 0;
   margin-bottom: 80px;
   letter-spacing: -0.5px;
+  word-spacing: -20px;
+  position: relative;
+}
+.main-screen__heading::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url('./img/main-screen-image.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  width: min(1720px, 117vw);
+  height: 1300px;
+  top: -148%;
+  left: 20%;
+  z-index: -1;
 }
 @media (max-width: 1300px) {
   .main-screen {
     padding-bottom: 180px;
+  }
+  .main-screen__heading::after {
+    width: max(520px, 100vw);
+    top: -100%;
+    left: 33%;
   }
 }
 @media (max-width: 1100px) {
   .main-screen {
     padding-bottom: 120px;
   }
+  .main-screen__heading::after {
+    top: -50%;
+  }
 }
 @media (max-width: 800px) {
   .main-screen {
     padding-bottom: 80px;
   }
+  .main-screen__container {
+    padding-top: 120px;
+  }
   .main-screen__heading {
     font-size: 54px;
-    margin-top: 120px;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 600px) {
+  .main-screen__container {
+    padding-top: 80px;
+  }
   .main-screen__heading {
     font-size: 44px;
     width: 100%;
-    margin-top: 80px;
+  }
+}
+@media (max-width: 450px) {
+  .main-screen__heading::after {
+    top: 1%;
+    left: -1%;
   }
 }
 /* #endregion Main Screen */
