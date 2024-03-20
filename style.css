@@ -80,6 +80,7 @@ html {
   color: #fff;
   background-color: var(--dark-color, #000); 
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -89,6 +90,7 @@ body {
   background-position: top left, top right;
   background-repeat: no-repeat; 
   overflow-x: hidden;
+  max-width: 100%;
 }
 .container {
   min-width: 300px;
