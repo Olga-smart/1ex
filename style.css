@@ -542,6 +542,9 @@ body {
   width: 260px;
   position: relative;
 }
+.features__item_trading-terminal {
+  width: 270px;
+}
 .features__item-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,29 +564,35 @@ body {
   margin-bottom: 296px;       
 }
 .features__item-img {
-  width: 706px;
   height: auto;
   position: absolute;
-  top: -85px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   pointer-events: none;        
 }
-.features__item-img_algo {
-  -webkit-transform: translateX(-42%);
-      -ms-transform: translateX(-42%);
-          transform: translateX(-42%);
-}
 .features__item-img_ai-news {
-  width: 691px;
-  top: -10px;
+  width: 630px;
+  top: -20px;
+  -webkit-transform: translateX(-46%);
+      -ms-transform: translateX(-46%);
+          transform: translateX(-46%);
+                          
 }
-.features__item-img_smart-dom {
-  -webkit-transform: translateX(-58%);
-      -ms-transform: translateX(-58%);
-          transform: translateX(-58%);
+.features__item-img_trading-terminal {
+  width: 650px;
+  top: -25px;
+  -webkit-transform: translateX(-48%);
+      -ms-transform: translateX(-48%);
+          transform: translateX(-48%);
+}
+.features__item-img_algo {
+  width: 610px;
+  top: -50px;
+  -webkit-transform: translateX(-52%);
+      -ms-transform: translateX(-52%);
+          transform: translateX(-52%);
 }
 .features__item-description {
   line-height: 1.4;
@@ -599,16 +608,16 @@ body {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.features__item-link_algo {
-  color: var(--turquoise-color);
-}
 .features__item-link:hover {
   color: var(--pink-dark-color);
 }
-.features__item-link_ai-ews {
+.features__item-link_algo {
+  color: var(--turquoise-color);
+}
+.features__item-link_ai-news {
   color: var(--blue-color);
 }
-.features__item-link_smart-dom {
+.features__item-link_trading-terminal {
   color: var(--purple-color);
 }
 .features__slider {
@@ -747,6 +756,26 @@ body {
   }
   .features__item {
     padding: 0 50px;
+  }
+}
+@media (max-width: 540px) {
+  .features__heading {
+    margin-bottom: 60px;
+  }
+  .features__item-title {
+    margin-bottom: 240px;       
+  }
+  .features__item-img_ai-news {
+    width: 470px;
+    top: 5px;                            
+  }
+  .features__item-img_trading-terminal {
+    width: 490px;
+    top: 0;
+  }
+  .features__item-img_algo {
+    width: 460px;
+    top: -25px;
   }
 }
 /* #endregion Features */
