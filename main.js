@@ -735,15 +735,21 @@ new Glide('.js-features__slider', {
 
 // #region Products Slider
 new Glide('.js-products__slider', {
-  perView: 2.2,
+  perView: 2.5,
   gap: 24,
   peek: 32,
   breakpoints: {
+    900: {
+      perView: 2.2,
+    },
+    800: {
+      perView: 1.8,
+    },
     700: {
-      perView: 1.7,
+      perView: 1.6,
     },
     600: {
-      perView: 1.4,
+      perView: 1.3,
     },
     500: {
       perView: 1.1,

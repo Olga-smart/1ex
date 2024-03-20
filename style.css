@@ -1148,22 +1148,15 @@ body {
   border: 1px solid #313149;
   padding: 20px;
   width: 100%;
+  min-height: 360px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 210px 90px auto;
+  grid-template-rows: 193px 1fr auto;
+  row-gap: 24px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-.products__item_algo:hover {
-          -webkit-box-shadow: 
-    inset 0 0 90px 0 var(--turquoise-color),
-    inset 0 0 190px 0 var(--turquoise-color),
-    inset 0 0 120px 0 var(--turquoise-color);
-                  box-shadow: 
-    inset 0 0 90px 0 var(--turquoise-color),
-    inset 0 0 190px 0 var(--turquoise-color),
-    inset 0 0 120px 0 var(--turquoise-color);
+  will-change: box-shadow;
 }
 .products__item_ai-news:hover {
   -webkit-box-shadow: 
@@ -1175,7 +1168,7 @@ body {
     inset 0 0 190px 0 var(--blue-color),
     inset 0 0 120px 0 var(--blue-color);
 }
-.products__item_smart-dom:hover {
+.products__item_trading-terminal:hover {
   -webkit-box-shadow: 
     inset 0 0 90px 0 var(--purple-color),
     inset 0 0 190px 0 var(--purple-color),
@@ -1184,6 +1177,16 @@ body {
     inset 0 0 90px 0 var(--purple-color),
     inset 0 0 190px 0 var(--purple-color),
     inset 0 0 120px 0 var(--purple-color);
+}
+.products__item_algo:hover {
+  -webkit-box-shadow: 
+    inset 0 0 90px 0 var(--turquoise-color),
+    inset 0 0 190px 0 var(--turquoise-color),
+    inset 0 0 120px 0 var(--turquoise-color);
+            box-shadow: 
+    inset 0 0 90px 0 var(--turquoise-color),
+    inset 0 0 190px 0 var(--turquoise-color),
+    inset 0 0 120px 0 var(--turquoise-color);
 }
 .products__item-heading {
   text-transform: uppercase;
@@ -1213,17 +1216,18 @@ body {
   color: #fff;
 }
 .products__slider {
-  display: none;
+  display: none;          
 }
 @media (max-width: 1200px) {
   .products__item {
-    grid-template-rows: 196px 64px auto;
+    grid-template-rows: 172px 1fr auto;
+    min-height: 320px;
   }
   .products__item-heading {
     font-size: 48px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .products {
     padding-bottom: 160px;
   }
@@ -1232,6 +1236,9 @@ body {
   }
   .products__slider {
     display: block;
+  }
+  .products__item {
+    height: 100%;
   }
 }
 @media (max-width: 450px) {
@@ -1244,6 +1251,9 @@ body {
   }
   .products__header-note {
     margin-bottom: 16px;
+  }
+  .products__item-heading {
+    font-size: 42px;
   }
 }
 /* #endregion Products */
