@@ -219,7 +219,6 @@ body {
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
-  z-index: 1;
 }
 .header__container {
   min-width: 300px;
@@ -625,7 +624,6 @@ body {
 .features__slider {
   display: none;
   position: relative;
-  z-index: -1;
 }
 .features__slider-arrow {
   display: none;
@@ -726,6 +724,9 @@ body {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.features__slider-slides {
+  z-index: -1;
 }
 @media (max-width: 1200px) {
   .features__list {
