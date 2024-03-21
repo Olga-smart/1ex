@@ -43,7 +43,7 @@ const pieOption = {
         { value: 6, name: 'SEED ROUND' },
         { value: 4, name: 'PRIVATE ROUND' },
         { value: 15, name: 'FUTURE\nROUND' },
-        { value: 12, name: 'CORE TEA' },
+        { value: 12, name: 'CORE TEAM' },
         { value: 6, name: 'ADVISORS' },
         { value: 10, name: 'LIQUIDITY' },
         { value: 8, name: 'MARKETING' },
