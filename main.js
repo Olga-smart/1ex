@@ -709,10 +709,8 @@ window.addEventListener('resize', function() {
 
 // #endregion Charts
 
-// #region Sliders
-
-// #region Features Slider
-new Glide('.js-features__slider', {
+// #region Products Slider
+new Glide('.js-products__slider', {
   perView: 2.7,
   gap: 0,
   breakpoints: {
@@ -731,31 +729,4 @@ new Glide('.js-features__slider', {
     }
   }
 }).mount();
-// #endregion Features Slider
-
-// #region Products Slider
-new Glide('.js-products__slider', {
-  perView: 2.5,
-  gap: 24,
-  peek: 32,
-  breakpoints: {
-    900: {
-      perView: 2.2,
-    },
-    800: {
-      perView: 1.8,
-    },
-    700: {
-      perView: 1.6,
-    },
-    600: {
-      perView: 1.3,
-    },
-    500: {
-      perView: 1.1,
-    }
-  }
-}).mount();
 // #endregion Products Slider
-
-// #endregion Sliders
